@@ -18,3 +18,12 @@ PowerShellコンソールで以下のコマンドを実行。
 ```
 Install-WindowsFeature DSC-Service
 ```
+
+## 端末特有情報取得＆MOFファイル作成
+
+PowerShellコンソールで以下のコマンドを実行。
+
+```
+IISConfig.ps1
+```
+
