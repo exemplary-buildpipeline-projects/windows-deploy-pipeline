@@ -10,3 +10,11 @@ Powershellなどのコードに落とせない手動オペレーションを記�
 ※初期状態でWindowsサーバのIEはファイルダウンロードデキないので、
 [ここ](http://blogs.technet.com/b/jpieblog/archive/2009/06/19/3256750.aspx)
 を参考に権限を緩める。
+
+## DSC Server startup
+
+PowerShellコンソールで以下のコマンドを実行。
+
+```
+Install-WindowsFeature DSC-Service
+```
