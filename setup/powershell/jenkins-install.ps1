@@ -8,7 +8,7 @@
 
 # 定数
 $JENKINS_URL = "http://localhost:8080"
-$JENKINS_HOME = "${$env:programfiles(x86)}\Jenkins"
+$JENKINS_HOME = "${env:programfiles(x86)}\Jenkins"
 $DEFAULT_ZIP = ".\default_setting_and_jobs.zip"
 
 # 実処理
