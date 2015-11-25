@@ -1,6 +1,6 @@
 Configuration IISConfiguration
 {
-   Node PSDSCClient001
+   Node localhost
    {
        WindowsFeature IIS
        {
@@ -11,7 +11,7 @@ Configuration IISConfiguration
        WindowsFeature ASP
        {
            Ensure = "Present"
-           Name = "Web-Asp-Net45"
+           Name = "Web-Asp"
        }
    }
 }

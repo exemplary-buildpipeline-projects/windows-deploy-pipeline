@@ -1,4 +1,4 @@
-# Manual Operation
+﻿# Manual Operation
 
 Powershellなどのコードに落とせない手動オペレーションを記録するテキスト。
 
@@ -30,5 +30,5 @@ IISConfig.ps1
 ## DSC実行、IISインストール
 
 ```
-Start-DscConfiguration -ComputerName PSDSCClient001 -Path IISConfiguration -Wait -Verbose -Credential $(Get-Credential)
+Start-DscConfiguration -ComputerName localhost -Path IISConfiguration -Wait -Verbose -Credential $(Get-Credential)
 ```
