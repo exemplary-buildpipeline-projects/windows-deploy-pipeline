@@ -27,3 +27,8 @@ PowerShellコンソールで以下のコマンドを実行。
 IISConfig.ps1
 ```
 
+## DSC実行、IISインストール
+
+```
+Start-DscConfiguration -ComputerName PSDSCClient001 -Path IISConfiguration -Wait -Verbose -Credential $(Get-Credential)
+```
