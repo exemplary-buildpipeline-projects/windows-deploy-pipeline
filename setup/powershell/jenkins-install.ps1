@@ -1,12 +1,14 @@
+﻿
 # Windows上にJenkinsの最新をインストールするPowerShellスクリプト
 #
-# PowerShellV4を期待(Expand-Archive なんてもっと前からつけとけよ！)
+# PowerShellV5を期待(Expand-Archive なんてもっと前からつけとけよ！)
+# ここから、msiを落とし、インストール : https://www.microsoft.com/en-in/download/confirmation.aspx?id=48729
 # パッケージ管理 chocolatey 経由でインストールする。(自力を断念)
 # ※おそらく、2015/12 付近でしか動かない。(Pluginの名前などがこの時点基準であるため)
 
 # 定数
 $JENKINS_URL = "http://localhost:8080"
-$JENKINS_HOME = "C:\Program Files\Jenkins"
+$JENKINS_HOME = "${env:programfiles(x86)}\Jenkins"
 $DEFAULT_ZIP = ".\default_setting_and_jobs.zip"
 
 # 実処理
@@ -17,6 +19,9 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 # Jenkinsインストール
 choco install jre8
 choco install jenkins
+
+# しばらく、Jenkinsが立ちあ上がるだろう時間まで待つ
+sleep 180
 
 # JekinsCLIを使って、必要と思われるPluginを入れる。
 
