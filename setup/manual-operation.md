@@ -24,6 +24,7 @@ Install-WindowsFeature DSC-Service
 PowerShellコンソールで以下のコマンドを実行。
 
 ```
+cd .\setup\powershell
 IISConfig.ps1
 ```
 
@@ -31,4 +32,10 @@ IISConfig.ps1
 
 ```
 Start-DscConfiguration -ComputerName localhost -Path IISConfiguration -Wait -Verbose -Credential $(Get-Credential)
+```
+
+### Jenkinsセットアップ
+
+```
+.\jenkins-install.ps1
 ```
