@@ -13,6 +13,12 @@ Configuration IISConfiguration
            Ensure = "Present"
            Name = "Web-Asp"
        }
+
+       WindowsFeature ASP_NET
+       {
+           Ensure = "Present"
+           Name = "Web-Asp-Net45"
+       }
    }
 }
 
