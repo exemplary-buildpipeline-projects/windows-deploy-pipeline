@@ -34,8 +34,16 @@ IISConfig.ps1
 Start-DscConfiguration -ComputerName localhost -Path IISConfiguration -Wait -Verbose -Credential $(Get-Credential)
 ```
 
-### Jenkinsセットアップ
+## Jenkinsセットアップ
 
 ```
 .\jenkins-install.ps1
 ```
+
+## SQLServer(Express)セットアップ
+
+手動にてインストールします。
+
+### 下準備
+
+[ここ](https://technet.microsoft.com/ja-jp/library/ee210665.aspx)を参考に「ロケール情報を日本に」合わせます。
