@@ -47,3 +47,4 @@ Start-DscConfiguration -ComputerName localhost -Path IISConfiguration -Wait -Ver
 ### 下準備
 
 [ここ](https://technet.microsoft.com/ja-jp/library/ee210665.aspx)を参考に「ロケール情報を日本に」合わせます。
+ランゲージパック系の話は[ここ](http://recipe.kc-cloud.jp/archives/3703)を参照。
