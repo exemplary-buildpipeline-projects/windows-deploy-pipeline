@@ -48,3 +48,5 @@ Start-DscConfiguration -ComputerName localhost -Path IISConfiguration -Wait -Ver
 
 [ここ](https://technet.microsoft.com/ja-jp/library/ee210665.aspx)を参考に「ロケール情報を日本に」合わせます。
 ランゲージパック系の話は[ここ](http://recipe.kc-cloud.jp/archives/3703)を参照。
+
+次に「サーバマネージャー」から、「役割と機能の追加」で「.NET Framework 3.5」を追加します。
