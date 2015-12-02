@@ -50,3 +50,10 @@ Start-DscConfiguration -ComputerName localhost -Path IISConfiguration -Wait -Ver
 ランゲージパック系の話は[ここ](http://recipe.kc-cloud.jp/archives/3703)を参照。
 
 次に「サーバマネージャー」から、「役割と機能の追加」で「.NET Framework 3.5」を追加します。
+
+## IISにサイトを作る
+
+[IISのマネージャをインストール](http://itdoc.hitachi.co.jp/manuals/3020/30203T6830/BT680008.HTM#ID00016)します。
+
+※おそらくこれは、上の「IISインストール時」にできるとおもうのですが…時間ないから今回は手動です。
+
