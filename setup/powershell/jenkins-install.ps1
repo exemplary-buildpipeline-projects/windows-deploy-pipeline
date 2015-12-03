@@ -37,6 +37,8 @@ $client.DownloadFile( "$JENKINS_URL/jnlpJars/jenkins-cli.jar", "$pwd\jenkins-cli
 # Build Pipeline Plugin
 # GIT plugin
 # MSBuild Plugin
+# MSTestRunner
+# VSTest Runner plugin
 
 
 # 本体の設定 & ジョブの設定をZIPから展開し、インストールディレクトリにかぶせる & 再起動
