@@ -30,19 +30,12 @@ $client = new-object System.Net.WebClient
 $client.DownloadFile( "$JENKINS_URL/jnlpJars/jenkins-cli.jar", "$pwd\jenkins-cli.jar" )
 
 # Pluginインストール
-# TODO java -jar jenkins-cli.jar -s $JENKINS_URL install-plugins pluginNameA pluginNameB pluginNameC...
-# FIXME ここはあとで再起動するからいらない…かも？ java -jar jenkins-cli.jar -s $JENKINS_URL safe-restart
 
 # プラグイン群
-# Build Pipeline Plugin
-# GIT plugin
-# MSBuild Plugin
-# MSTestRunner
-# VSTest Runner plugin
-# MSTest Pluign
-# CloudBees Folders Plugin
-# Locks and Latches plugin
-# PowerShell plugin
+# https://updates.jenkins-ci.org/latest/ から、対応する名前を探し、".hpi"を取り除いたのがプラグイン名。
+java -jar jenkins-cli.jar -s $JENKINS_URL git build-pipeline-plugin msbuild mstestrunner vstestrunner mstest cloudbees-folder locks-and-latches	powershell
+
+# FIXME ここはあとで再起動するからいらない…かも？ java -jar jenkins-cli.jar -s $JENKINS_URL safe-restart
 
 # 本体の設定 & ジョブの設定をZIPから展開し、インストールディレクトリにかぶせる & 再起動
 Expand-Archive -Path $DEFAULT_ZIP -DestinationPath $JENKINS_HOME -Force
