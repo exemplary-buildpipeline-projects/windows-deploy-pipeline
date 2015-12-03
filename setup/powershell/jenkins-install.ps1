@@ -39,7 +39,7 @@ $client.DownloadFile( "$JENKINS_URL/jnlpJars/jenkins-cli.jar", "$pwd\jenkins-cli
 # MSBuild Plugin
 # MSTestRunner
 # VSTest Runner plugin
-
+# MSTest Pluign
 
 # 本体の設定 & ジョブの設定をZIPから展開し、インストールディレクトリにかぶせる & 再起動
 Expand-Archive -Path $DEFAULT_ZIP -DestinationPath $JENKINS_HOME -Force
