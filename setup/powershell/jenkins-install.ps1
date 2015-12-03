@@ -33,6 +33,12 @@ $client.DownloadFile( "$JENKINS_URL/jnlpJars/jenkins-cli.jar", "$pwd\jenkins-cli
 # TODO java -jar jenkins-cli.jar -s $JENKINS_URL install-plugins pluginNameA pluginNameB pluginNameC...
 # FIXME ここはあとで再起動するからいらない…かも？ java -jar jenkins-cli.jar -s $JENKINS_URL safe-restart
 
+# プラグイン群
+# Build Pipeline Plugin
+# GIT plugin
+# MSBuild Plugin
+
+
 # 本体の設定 & ジョブの設定をZIPから展開し、インストールディレクトリにかぶせる & 再起動
 Expand-Archive -Path $DEFAULT_ZIP -DestinationPath $JENKINS_HOME -Force
 java -jar jenkins-cli.jar -s $JENKINS_URL safe-restart
