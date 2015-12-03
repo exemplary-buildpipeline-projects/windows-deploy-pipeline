@@ -41,6 +41,8 @@ $client.DownloadFile( "$JENKINS_URL/jnlpJars/jenkins-cli.jar", "$pwd\jenkins-cli
 # VSTest Runner plugin
 # MSTest Pluign
 # CloudBees Folders Plugin
+# Locks and Latches plugin
+# PowerShell plugin
 
 # 本体の設定 & ジョブの設定をZIPから展開し、インストールディレクトリにかぶせる & 再起動
 Expand-Archive -Path $DEFAULT_ZIP -DestinationPath $JENKINS_HOME -Force
